@@ -1,0 +1,28 @@
+site_name: AI Lab
+site_url: https://marcelvanderhoekdtc.github.io/ai-lab/ 
+repo_url: https://github.com/marcelvanderhoekdtc/ai-lab
+repo_name: GitHub
+
+theme:
+  name: material
+  language: nl
+  palette: 
+    scheme: slate             # Standaard Dark Mode
+    primary: indigo           # Hoofdkleur
+    accent: cyan              # Accentkleur (voor acties)
+  features:
+    - navigation.tabs         # Tabs bovenaan
+    - navigation.sections     # Uitklapmenu's
+    - navigation.top          # Terug naar boven knop
+    - search.suggest          # Slimme zoekbalk
+    - content.code.copy       # Kopieerknop bij code
+
+# Extensies: Cruciaal voor jouw diagrammen en proces-flows
+markdown_extensions:
+  - admonition                # Mooie gekleurde blokken
+  - pymdownx.details          # Uitklapbare tekst
+  - pymdownx.superfences:     # Mermaid ondersteuning
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
